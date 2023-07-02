@@ -11,4 +11,4 @@ class Country(db.Model, SerializerMixin):
     population =db.Column(db.Integer)
 
     def __repr__(self):
-        return f'<country: {self.name}, population: {self.population}'
+        return f'<country: {self.name}, population: {self.population}'~
