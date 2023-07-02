@@ -56,7 +56,7 @@ class CountryByID(Resource):
     
     def get(self, id):
         country = Country.query.filter_by(id=id).first().to_dict()
-        return make_response(jsonify(bird), 200)
+        return make_response(jsonify(country), 200)
 
     def patch(self, id):
 
